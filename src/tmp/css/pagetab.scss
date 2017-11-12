@@ -1,0 +1,54 @@
+.page-tab__wrap {
+  background: #fff;
+  &.container-md {
+    padding: 0;
+  }
+}
+.page-tab__tab {
+  display: flex;
+  background: #F0F2F5;
+  overflow: hidden;
+  li, a {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+  }
+  li {
+    flex: 1;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  a {
+    padding: 20px;
+  }
+  .active {
+    background: #fff;
+  }
+}
+.page-tab__page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+  line-height: 1.7;
+  h2 {
+    margin: 40px 0 16px;
+    color: #E23D0E;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    color: #3E3E3E;
+  }
+  dl {
+    font-size: 1.2em;
+  }
+  dt {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}

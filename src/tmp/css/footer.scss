@@ -1,0 +1,105 @@
+#footer, footer {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  .footer__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 45px 0;
+  }
+  .footer__inner__links {
+    flex: 3 0 auto;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    ul {
+      li {
+        display: block;
+        line-height: 1.6;
+        font-size: 16px;
+        a {
+          display: inline-block;
+          line-height: 1.6;
+          font-size: 16px;
+        }
+      }
+    }
+    .font-logo {
+      display: block;
+      width: 160px;
+      height: 60px;
+      text-indent: -99999px;
+      background-image: url("../../assets/img/logo-text.svg");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+  .footer__inner__list {
+    display: flex;
+    flex: 2 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    .list {
+      flex: auto;
+      h3 {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      ul {
+        li {
+          display: block;
+          line-height: 1.8;
+          a {
+            &:hover {
+              color: #E23D0E;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer__icp {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+  .footer__icp__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 45px 0;
+    .icp {
+      flex: auto;
+      font-size: 12px;
+      margin-top: 4px;
+      color: #aaa;
+      line-height: 1.6;
+    }
+    .image {
+      flex: none;
+      a {
+        display: inline-block;
+      }
+    }
+    .beian-icon {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-image: url('../../assets/img/beian-icon.png');
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .footer__inner__list {
+      .list {
+        flex: 1 0 50%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

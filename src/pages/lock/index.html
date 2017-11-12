@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>智能锁 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  @@include('pagetitle.html', {
+    "title": "智能锁",
+    "subTitle": "摩拜智造，天生靠得住",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  })
+  @@include('introsection.html', {
+    "title": "精准定位",
+    "desc": "手机上总是能知道离你最近的摩拜单车在哪里？有赖于三模定位技术的支持，我们能确保实际定位误差不超过 30cm。总有一辆摩拜单车在对的地方等待你。",
+    "imgUrl": "../static/assets/img/section-2.jpg",
+    "imgOrder": ""
+  })
+  @@include('intropicture.html', {
+    "imgUrl": "../static/assets/img/lock-bg-01.jpg"
+  })
+  @@include('introsection.html', {
+    "title": "秒级响应",
+    "desc": "无需掏出钥匙或者按动按键，只需轻轻一扫，3 秒之内立即开锁上车。结束骑行关锁即可结账，快捷方便。",
+    "imgUrl": "../static/assets/img/lock-front-01.jpg",
+    "imgOrder": "--reverse"
+  })
+  @@include('intropicture.html', {
+    "imgUrl": "../static/assets/img/lock-bg-02.jpg"
+  })
+  @@include('introsection.html', {
+    "title": "无惧环境，始终可用",
+    "desc": "无论高温或者酷寒，暴雨或风雪。摩拜单车的智能车锁始终如一，7×24 小时，365 天等待你的开启。",
+    "imgUrl": "../static/assets/img/lock-front-02.jpg",
+    "imgOrder": ""
+  })
+  @@include('intropicture.html', {
+    "imgUrl": "../static/assets/img/product-callout.jpg"
+  })
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  <footer>
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  </footer>
+  <!-- include js -->
+  @@include('script.html')
+</body>
+</html>

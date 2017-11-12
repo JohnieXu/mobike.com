@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mobike</title>
+  <!-- <link rel="stylesheet" href="static/vendor/uikit/css/uikit.min.css"> -->
+  <!-- <link rel="stylesheet" href="static/css/main.min.css"> -->
+  <!-- include css -->
+  @@include('css.html')
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "./static/assets/img/logo-text.svg"
+  })
+  <!-- main content -->
+  @@include('banner.html', {
+    "imgs": ["./static/assets/img/hero-bg-3.jpg","./static/assets/img/hero-bg-4.jpg","./static/assets/img/hero-bg-5.jpg","./static/assets/img/hero-bg-6.jpg"],
+    "title": "让自行车回归城市",
+    "appLink": "立即开始使用 Mobike",
+    "appUrl": "https://t.growingio.com/app/at0/KnoqExok"
+  })
+  <!-- promotion -->
+  @@include('promotion.html', {
+    "items": [{
+      "title": "大国品牌",
+      "img": "./static/assets/img/promo-01.jpg",
+      "url": "./"
+    },{
+      "title": "摩拜科技",
+      "img": "./static/assets/img/promo-02.jpg",
+      "url": "./"
+    },{
+      "title": "摩拜生活",
+      "img": "./static/assets/img/promo-03.jpg",
+      "url": "./"
+    },{
+      "title": "摩拜校招",
+      "img": "./static/assets/img/promo-04.jpg",
+      "url": "./"
+    }]
+  })
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  <footer>
+  @@include('footer.html', {
+    "logo": "./static/assets/img/logo-text.svg",
+    "home": "./",
+    "beian": "./static/assets/img/beian-icon.png",
+    "longtou": "./static/assets/img/longtou.jpg"
+  })
+  </footer>
+  <!-- build:js static/js/combined.js -->
+  @@include('script.html')
+  <!-- endbuild -->
+</body>
+</html>

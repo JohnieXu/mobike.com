@@ -1,0 +1,205 @@
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  .navigation__wrap {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    color: #fff;
+    transition: background .4s ease;
+  }
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .navigation {
+    display: flex;
+    height: 80px;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo__links {
+    flex: 1;
+    a {
+      display: inline-block;
+      color: #fff;
+    }
+  }
+  .nav__links {
+    flex: none;
+    white-space: nowrap;
+    transition: all 0.4s ease;
+    & > li > a {
+      display: inline-block;
+      padding: 8px 20px;
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+  .nav__links--sub {
+    position: absolute;
+    padding-top: 15px;
+    min-width: 240px;
+    color: #333;
+    background: transparent;
+    font-size: 0;
+    transition: all 0.4s ease;;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.0980392);
+    z-index: 10;
+    & > li {
+      position: relative;
+      display: block;
+      background: #fff;
+      &.nav-caret { // 菜单栏三角形
+        &:before {
+          position: absolute;
+          left: 26px;
+          bottom: calc(100% - 1px);
+          width: 0;
+          height: 0;
+          content: "";
+          border: 8px solid #fff;
+          border-color: rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,1);
+        }
+      }
+      & + li {
+        margin-top: -2px; // 修复boder问题
+      }
+      &:first-child {
+        border-radius: 4px 4px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 4px 4px;
+      }
+      & > a {
+        display: block;
+        padding: 15px 20px 8px;
+        &:hover {
+          .title {
+            color: #E23D0E;
+          }
+        }
+      }
+    }
+    .title {
+      line-height: 1.5;
+      font-size: 20px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    .desc {
+      font-size: 14px;
+      color: #aaa;
+    }
+  }
+  .nav__links--mobile {
+    display: none;
+    a {
+      color: #fff;
+    }
+  }
+  .nav__links--toggle {
+    width: 40px;
+    height: 40px;
+    .nav-toggle {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      &.on {   // toggle切换动画
+        .toggle-icon {
+          &:before {
+            transform: rotate(45deg) translateX(12px);
+          }
+          &:after {
+            transform: rotate(-45deg) translateX(13px);
+          }
+        }
+      }
+    }
+    .toggle-icon {
+      display: inline-block;
+      width: 0;
+      height: 2px;
+      overflow: hidden;
+      &:before, &:after {
+        position: absolute;
+        left: 10px;
+        display: block;
+        width: 20px;
+        height: 2px;
+        content: "";
+        background: #fff;
+        border-radius: 3px;
+        transition: all 0.4s ease;
+      }
+      &:before {
+        top: 10px;
+      }
+      &:after {
+        bottom: 10px;
+      }
+      &.on {
+        &:before {
+          transform: rotate(45deg) translateY(10px);
+        }
+        &:after {
+          transform: rotate(135deg) translateY(-10px);
+        }
+      }
+    }
+  }
+}
+
+/* <1080px */
+@media only screen and (max-width: 1080px) {
+  #header {
+    .navigation__wrap {
+      background: rgba(226, 61, 14, 0);
+    }
+    .nav__links {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      display: none;
+      background: #E23D0E;
+      li, a {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      & > li > a {
+        padding: 16px 20px;
+      }
+    }
+    .nav__links--mobile {
+      display: block;
+    }
+    .nav__links--sub {
+      position: initial;
+      width: 100%;
+      padding: 0;
+      box-shadow: none;
+      & > li {
+        border-radius: 0 !important;
+        & > a {
+          padding: 15px 20px;
+        }
+      }
+      & > li + li {
+        border-top: 1px solid #eee;
+      }
+      .nav-caret {
+        &:before {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

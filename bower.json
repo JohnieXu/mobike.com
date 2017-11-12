@@ -1,0 +1,21 @@
+{
+  "name": "mobike.com",
+  "description": "mobike.com",
+  "main": "index.html",
+  "authors": [
+    "JohniXu"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "uikit": "^2.27.4",
+    "jquery": "1.11"
+  }
+}

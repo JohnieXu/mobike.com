@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>经典版摩拜单车 - Mobike</title>
+  @@include('css.html')
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  @@include('pagetitle.html', {
+    "title": "经典版摩拜单车",
+    "subTitle": "轻便，可靠",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  })
+  @@include('introsection.html', {
+    "basePath": "../",
+    "title": "轻巧可提",
+    "desc": "有史以来最轻巧的摩拜单车，升级选用航天级铝材车架，我们在轻巧和牢固两个层面都达到了最佳状态。一个女生即可双手举起的单车，骑行流畅省力。",
+    "imgUrl": "../static/assets/img/classic-plus-front-01.jpg",
+    "imgOrder": ""
+  })
+  @@include('intropicture.html', {
+    "imgUrl": "../static/assets/img/classic-plus-bg-01.jpg"
+  })
+  @@include('introsection.html', {
+    "basePath": "../",
+    "title": "天生可靠",
+    "desc": "经典版摩拜单车在城市环境下 5 年无需维护随时可用。摩拜单车始终将安全视为重中之重，采用汽车级碟刹系统，制动效率比普通刹车高 20%。当你解锁一辆摩拜单车，你应该知道我们是可靠的。",
+    "imgUrl": "../static/assets/img/product-02.jpg",
+    "imgOrder": "--reverse"
+  })
+  @@include('intropicture.html', {
+    "imgUrl": "../static/assets/img/classic-plus-bg-01.jpg"
+  })
+  @@include('introsection.html', {
+    "basePath": "../",
+    "title": "舒适个性",
+    "desc": "配备机械式升降座椅，符合人体工学理念，手指轻轻一扳就能快速调节车座高度，任何身高都能找到最舒适的骑行姿势。",
+    "imgUrl": "../static/assets/img/product-01.jpg",
+    "imgOrder": ""
+  })
+  @@include('intropicture.html', {
+    "imgUrl": "../static/assets/img/classic-plus-bg-02.jpg"
+  })
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  <footer>
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  </footer>
+  @@include('script.html')
+</body>
+</html>

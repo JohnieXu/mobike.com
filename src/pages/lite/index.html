@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>轻骑版摩拜单车 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  @@include('pagetitle.html', {
+    "title": "轻骑版摩拜单车",
+    "subTitle": "城市随处可骑行",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  })
+  @@include('introsection.html', {
+    "title": "橙色风尚",
+    "desc": "产品研发团队的匠心打造，只为满足更丰富的骑行需求。车身主色调承袭摩拜经典橙、黑、银。亮眼的跃动橙色构成了城市的风景线。如果我们都是摩拜一族，那么应该在路上可以轻易认出彼此。",
+    "imgUrl": "../static/assets/img/lite-01.jpg",
+    "imgOrder": ""
+  })
+  @@include('intropicture.html', {
+    "imgUrl": "../static/assets/img/lite-02.jpg"
+  })
+  @@include('introsection.html', {
+    "title": "安全稳定",
+    "desc": "采用鼓刹，性能更稳定，可达到5年免维护。设计中提高了骑行润度，前后轴承花鼓，使骑行更加顺畅。增加橙色防护底座，骑行更舒适。",
+    "imgUrl": "../static/assets/img/lite-03.jpg",
+    "imgOrder": "--reverse"
+  })
+  @@include('intropicture.html', {
+    "imgUrl": "../static/assets/img/lite-04.jpg"
+  })
+  @@include('introsection.html', {
+    "title": "触手可及",
+    "desc": "我们相信优秀的共享单车服务值得为更多人所拥有。在兼顾低耗损和成本的情况下，你可以在大街小巷随时骑上一辆摩拜单车。",
+    "imgUrl": "../static/assets/img/lite-06.jpg",
+    "imgOrder": ""
+  })
+  @@include('intropicture.html', {
+    "imgUrl": "../static/assets/img/lite-05.jpg"
+  })
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  <footer>
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  </footer>
+  <!-- include js -->
+  @@include('script.html')
+</body>
+</html>

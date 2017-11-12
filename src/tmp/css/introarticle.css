@@ -1,0 +1,91 @@
+.intro-article {
+  padding: 30px 0;
+  background: #fff;
+}
+.intro-article:first-child {
+  padding: 60px 0 30px;
+}
+.intro-article .intro-article__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.intro-article .intro-article__inner__date {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 30%;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+.intro-article .intro-article__inner__date .date {
+  color: #B1B1B1;
+}
+.intro-article .intro-article__inner__date .year {
+  font-size: 16px;
+}
+.intro-article .intro-article__inner__date .month {
+  font-size: 36px;
+}
+.intro-article .intro-article__inner__intro {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 70%;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+}
+.intro-article .intro-article__inner__intro .title {
+  line-height: 2;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.intro-article .intro-article__inner__intro .title > a:hover {
+  color: #E23D0E;
+}
+.intro-article .intro-article__inner__intro .meta {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+.intro-article .intro-article__inner__intro .text {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #3E3E3E;
+}
+@media only screen and (max-width: 1080px) {
+  .intro-article .intro-article__inner__date {
+    margin-bottom: 30px;
+  }
+  .intro-article .intro-article__inner__date .year {
+    font-size: 36px;
+    display: inline;
+  }
+  .intro-article .intro-article__inner__date .month {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro-article .intro-article__inner__date {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .intro-article .intro-article__inner__intro {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}

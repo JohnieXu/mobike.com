@@ -1,0 +1,51 @@
+.city-group {
+  section {
+    margin: 0 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+  .city-group__left {
+    flex: 1 1 30%;
+    @media only screen and (max-width: 640px) {
+      flex: 1 1 100%;
+    }
+    h3 {
+      margin: 0;
+      line-height: 1.7;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+    h4 {
+      margin: 0;
+      line-height: 1.7;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+  }
+  .city-group__right {
+    flex: 1 1 70%;
+    @media only screen and (max-width: 640px) {
+      flex: 1 1 100%;
+    }
+  }
+  .city-list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .list-item {
+    display: block;
+    min-width: 25%;
+    height: 100%;
+  }
+  .list-item__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 2;
+    font-size: 1.2em;
+    font-weight: normal;
+    cursor: default;
+  }
+}

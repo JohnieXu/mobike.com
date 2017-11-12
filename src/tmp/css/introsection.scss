@@ -1,0 +1,48 @@
+.intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  &.intro-section--reverse {
+    .intro-section__image {
+      order: 1;
+    }
+    .intro-section__text {
+      order: 2;
+    }
+  }
+  .intro-section__image {
+    flex: 1 1 100%;
+    .image {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      background-image: url('../../assets/img/classic-plus-front-01.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+  .intro-section__text {
+    flex: 1 1 100%;
+    padding: 40px;
+    h2 {
+      margin-bottom: 16px;
+      line-height: 1.6;
+      font-size: 2em;
+      font-weight: bold;
+      color: #E23D0E;
+    }
+    h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+    p {
+      margin: 0;
+      line-height: 1.8;
+      font-size: 1.1em;
+      color: #3E3E3E;
+    }
+  }
+}

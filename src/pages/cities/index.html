@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>城市 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/cities.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  @@include('pagetitle.html', {
+    "title": "",
+    "subTitle": "",
+    "imgUrl": "../static/assets/img/header-cities-demo.jpg"
+  })
+  <!-- citygroup -->
+  <div id="city-group">
+    <div class="container-md">
+      <h2>摩拜现已在<br><span class="city-available-sum">176</span>座城市开通</h2>
+      <hr>
+      @@include('citygroup.html', {
+        "mainland": {
+          "name": "中国大陆",
+          "sum": 165,
+          "list": [{"name":"上海","url":""},{"name":"北京","url":""},{"name":"广州","url":""},{"name":"深圳","url":""},{"name":"成都","url":""},{"name":"宁波","url":""},{"name":"厦门","url":""},{"name":"佛山","url":""},{"name":"武汉","url":""},{"name":"昆明","url":""},{"name":"南京","url":""},{"name":"东莞","url":""},{"name":"珠海","url":""},{"name":"济南","url":""},{"name":"海口","url":""},{"name":"福州","url":""},{"name":"南宁","url":""},{"name":"长沙","url":""},{"name":"合肥","url":""},{"name":"天津","url":""},{"name":"郑州","url":""},{"name":"南昌","url":""},{"name":"无锡","url":""},{"name":"西安","url":""},{"name":"汕头","url":""},{"name":"石家庄","url":""},{"name":"辛集","url":""},{"name":"泉州","url":""},{"name":"德阳","url":""},{"name":"广汉","url":""},{"name":"什邡","url":""},{"name":"罗江","url":""},{"name":"中江","url":""},{"name":"漳州","url":""},{"name":"保山","url":""},{"name":"绵阳","url":""},{"name":"江门","url":""},{"name":"台山","url":""},{"name":"长垣","url":""},{"name":"芜湖","url":""},{"name":"嘉兴","url":""},{"name":"温州","url":""},{"name":"宜昌","url":""},{"name":"枝江","url":""},{"name":"汉中","url":""},{"name":"洛阳","url":""},{"name":"唐山","url":""},{"name":"贵阳","url":""},{"name":"杭州","url":""},{"name":"大连","url":""},{"name":"临汾","url":""},{"name":"洛南","url":""},{"name":"重庆","url":""},{"name":"银川","url":""},{"name":"绍兴","url":""},{"name":"禹城","url":""},{"name":"襄阳","url":""},{"name":"仙桃","url":""},{"name":"宝鸡","url":""},{"name":"眉山","url":""},{"name":"青岛","url":""},{"name":"平度","url":""},{"name":"威海","url":""},{"name":"巢湖","url":""},{"name":"太原","url":""},{"name":"邯郸","url":""},{"name":"大理","url":""},{"name":"咸阳","url":""},{"name":"鄂尔多斯","url":""},{"name":"马鞍山","url":""},{"name":"峨眉山","url":""},{"name":"乐山","url":""},{"name":"南充","url":""},{"name":"宜宾","url":""},{"name":"枣庄","url":""},{"name":"沈阳","url":""},{"name":"晋中","url":""},{"name":"曲阜","url":""},{"name":"三河","url":""},{"name":"拉萨","url":""},{"name":"扬州","url":""},{"name":"库尔勒","url":""},{"name":"渭南","url":""},{"name":"九江","url":""},{"name":"东阳","url":""},{"name":"开封","url":""},{"name":"资阳","url":""},{"name":"泰安","url":""},{"name":"遵义","url":""},{"name":"荆州","url":""},{"name":"台州","url":""},{"name":"沧州","url":""},{"name":"常德","url":""},{"name":"开远","url":""},{"name":"雅安","url":""},{"name":"桂林","url":""},{"name":"临沧","url":""},{"name":"内江","url":""},{"name":"盘锦","url":""},{"name":"苏州","url":""},{"name":"六安","url":""},{"name":"林州","url":""},{"name":"秦皇岛","url":""},{"name":"自贡","url":""},{"name":"湖州","url":""},{"name":"咸宁","url":""},{"name":"丹寨","url":""},{"name":"铜川","url":""},{"name":"中山","url":""},{"name":"赣州","url":""},{"name":"龙岩","url":""},{"name":"北海","url":""},{"name":"陵水","url":""},{"name":"澄江","url":""},{"name":"景洪","url":""},{"name":"莱芜","url":""},{"name":"德州","url":""},{"name":"保定","url":""},{"name":"黄山","url":""},{"name":"常州","url":""},{"name":"丽水","url":""},{"name":"大同","url":""},{"name":"吕梁","url":""},{"name":"长治","url":""},{"name":"徐州","url":""},{"name":"安顺","url":""},{"name":"乌鲁木齐","url":""},{"name":"神农架","url":""},{"name":"舟山","url":""},{"name":"郴州","url":""},{"name":"宿迁","url":""},{"name":"北仑","url":""},{"name":"黄慈溪山","url":""},{"name":"余姚","url":""},{"name":"义乌","url":""},{"name":"衡阳","url":""},{"name":"玉树","url":""},{"name":"兰州","url":""},{"name":"衢州","url":""},{"name":"阜阳","url":""},{"name":"昌吉","url":""},{"name":"张家口","url":""},{"name":"鄂州","url":""},{"name":"延安","url":""},{"name":"临沂","url":""},{"name":"榆林","url":""},{"name":"葫芦岛","url":""},{"name":"武威","url":""},{"name":"濮阳","url":""},{"name":"黄石","url":""},{"name":"黄冈","url":""},{"name":"潍坊","url":""},{"name":"淄博","url":""},{"name":"朔州","url":""},{"name":"巴彦淖尔","url":""},{"name":"呼和浩特","url":""},{"name":"赤峰","url":""},{"name":"镇江","url":""},{"name":"本溪","url":""},{"name":"北镇","url":""},{"name":"凯里","url":""}]
+        },
+        "overseas": {
+          "name": "海外",
+          "sum": 11,
+          "list": [{"name":"新加坡","url":""},{"name":"福冈","url":""},{"name":"札幌","url":""},{"name":"曼彻斯特","url":""},{"name":"索尔福德","url":""},{"name":"佛罗伦萨","url":""},{"name":"米兰","url":""},{"name":"伊林","url":""},{"name":"泰国","url":""},{"name":"马来西亚","url":""},{"name":"华盛顿特区","url":""}]
+        }
+      })
+    </div>
+  </div>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  <footer>
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  </footer>
+  <!-- include js -->
+  @@include('script.html')
+</body>
+</html>

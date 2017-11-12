@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>关于 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  @@include('pagetitle.html', {
+    "title": "关于",
+    "subTitle": "关于 Mobike",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  })
+  <!-- pagetab -->
+  @@include('pagetab.html')
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  <footer>
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  </footer>
+  <!-- include js -->
+  @@include('script.html')
+</body>
+</html>

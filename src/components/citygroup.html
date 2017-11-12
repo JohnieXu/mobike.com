@@ -1,0 +1,50 @@
+<div class="city-group">
+  <section>
+    <div class="city-group__left">
+      <h3>@@mainland.name</h3>
+      <h4>已开通<span>@@mainland.sum</span>座城市</h4>
+    </div>
+    <div class="city-group__right">
+      <ul class="city-list">
+        @@for (var i = 0, len2 = mainland.list.length; i < len2; i++) {
+          <li class="list-item"><a class="list-item__link" href="javascript:void(0);">`+mainland.list[i].name+`</a></li>
+        }
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="city-group__left">
+      <h3>@@overseas.name</h3>
+      <h4>已开通<span>@@overseas.sum</span>座城市</h4>
+    </div>
+    <div class="city-group__right">
+      <ul class="city-list">
+        @@for (var i = 0, len2 = overseas.list.length; i < len2; i++) {
+          <li class="list-item"><a class="list-item__link" href="javascript:void(0);">`+overseas.list[i].name+`</a></li>
+        }
+      </ul>
+    </div>
+  </section>
+  <!-- <section>
+    <div class="city-group__left">
+      <h3>中国大陆</h3>
+      <h4>已开通<span>165</span>座城市</h4>
+    </div>
+    <div class="city-group__right">
+      <ul class="city-list">
+        <li class="list-item"><a class="list-item__link" href="javascript:void(0);"></a></li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="city-group__left">
+      <h3>海外</h3>
+      <h4>已开通<span>11</span>座城市</h4>
+    </div>
+    <div class="city-group__right">
+      <ul class="city-list">
+        <li class="list-item"><a class="list-item__link" href="javascript:void(0);"></a></li>
+      </ul>
+    </div>
+  </section> -->
+</div>

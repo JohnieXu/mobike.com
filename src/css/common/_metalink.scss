@@ -1,0 +1,59 @@
+#metalink {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  .metalink__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .metalink__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // flex: 1;
+    padding: 45px 0;
+    .icon {
+      flex: 0 0 50px;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .icon-wechat {
+      background-image: url('../assets/img/icon-wechat.png');
+    }
+    .icon-rp {
+      background-image: url('../assets/img/icon-rp.png');
+    }
+    .icon-credit {
+      background-image: url('../assets/img/icon-credit.png');
+    }
+    .text {
+      flex: 1 0;
+      h4 {
+        margin: 0;
+        font-weight: 400;
+      }
+      p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .metalink__item {
+      flex: 1 1 0;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .metalink__item {
+      flex: none;
+      padding: 20px 0;
+    }
+  }
+}
+

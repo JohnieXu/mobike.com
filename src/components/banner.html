@@ -1,0 +1,33 @@
+<div id="banner">
+  <div class="banner__inner">
+    <div class="header-mask"></div>
+    <div class="banner__inner__mask"></div>
+    <div class="banner__inner__swiper">
+      <ul class="swiper">
+        @@for (let i = 0, len = imgs.length; i < len; i++) {
+          <li class="swiper__slide">
+            <div class="swiper__slide__bg" style="background-image:url(`+imgs[i]+`)"></div>
+          </li>
+        }
+      </ul>
+    </div>
+    <div class="banner__inner__overplay banner__inner__overplay--center">
+      <div class="overplay">
+        <h1>@@title</h1>
+        <a href="@@appUrl" target="_blank">@@appLink</a>
+      </div>
+    </div>
+    <div class="banner__inner__news">
+      <div class="container-md">
+        <a class="news-flex" href="">
+          <div class="icon">
+            <span class="headline-icon">News</span>
+          </div>
+          <div class="text">
+            <p class="headline-text">Prophet铂慧年度品牌50强：摩拜单车成唯一上榜互联网出行企业</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
