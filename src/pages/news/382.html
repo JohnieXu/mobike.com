@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/382.html">摩拜率先入驻华盛顿特区 未来将进入更多美国城市</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年9月20日</span></div><p>9 月 20 日，摩拜单车今天登陆美国首都华盛顿，正式开辟北美市场。这标志着摩拜单车进入全球第 8 个国家，此前摩拜已经先后进入英国、意大利和日本等国家和地区。</p>
+<p><img class="aligncenter size-full wp-image-383" src="https://mobike.com/wp/wp-content/uploads/2017/10/60c5a93fbf17835_size138_w866_h578.jpg" alt="" width="866" height="578" srcset="https://mobike.com/wp/wp-content/uploads/2017/10/60c5a93fbf17835_size138_w866_h578.jpg 866w, https://mobike.com/wp/wp-content/uploads/2017/10/60c5a93fbf17835_size138_w866_h578-300x200.jpg 300w, https://mobike.com/wp/wp-content/uploads/2017/10/60c5a93fbf17835_size138_w866_h578-768x513.jpg 768w" sizes="(max-width: 866px) 100vw, 866px" /></p>
+ <p>华盛顿特区政府对于摩拜单车的到来表示欢迎。双方此前共同协作，为该地区带来首个无桩共享单车服务。与美国本土的许多租赁单车不同，摩拜单车无需公共财政的扶持。在入驻每一座城市前，摩拜单车都会对城市环境进行调研，与当地政府及交通管理部门沟通，确保产品和运营符合各项规定。例如，摩拜单车在华盛顿投放的车辆均进行了适当改装，并加装了一些零部件，以更好地满足当地法规的要求。</p>
+ <p>此前，摩拜单车已经进入英国、意大利、日本、新加坡、泰国和马来西亚等 6 个海外国家，在全球超过 180 个城市投放和运营车辆。</p>
+ <p>摩拜单车创始人兼总裁胡玮炜表示：“摩拜单车致力于通过与各个城市紧密协作，在全世界培育共享单车文化；而入驻美国首都是关键一步。我们期待与全美更多城市携手，让骑行成为最舒适、最经济、最环保的出行选择，服务市民和游客。”</p>
+ <p>摩拜单车美国公司总经理宋金秋表示：“摩拜单车正在与许多美国城市展开合作。在华盛顿特区的成功试水，将为后续合作创造一个良好开端，帮助我们在全美推广智能共享单车。”</p>
+ <p>在进入华盛顿特区之前，摩拜单车已经与多家美国公司建立互信合作。9 月 11 日，摩拜单车与美国电信巨头 AT&amp;T 达成合作，使用后者的 4G LTE 移动网络在美国开展业务；并与高通公司合作，在智能锁中配备高通全球多模物联网调制解调器，实现全球无缝联接。9 月 17 日，摩拜单车携手联合国环境署、联合国人居署等，发起全球首个“世界骑行日”。</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

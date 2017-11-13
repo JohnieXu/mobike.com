@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/355.html">摩拜携手联合国环境署等发起“世界骑行日”</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年8月29日</span></div><p>8 月 29 日消息，摩拜单车今天携手首批联合发起机构——联合国环境署、世界资源研究所等全球性国际组织，以及新华社、新京报等国内权威媒体，共同发起“世界骑行日”，倡导“骑行改变城市”理念。摩拜单车倡议并发起，将每年的 9 月 17 日作为“世界骑行日”，这也是全球首个骑行文化节日。</p>
+ <p>今年恰逢自行车诞生 200 周年，也是以摩拜为代表的智能共享单车引领自行车回归城市的元年。过去 500 天里，共享单车成长为仅次于公交、地铁的第三大城市交通方式，以绿色低碳出行深刻改变城市生态和人文环境。如今，通过联合发起“世界骑行日”，摩拜单车希望与合作伙伴一道吸引更多人加入共享骑行，促进自行车的全球复兴，践行“骑行改变城市”的理念。</p>
+<p>“世界骑行日”取 9 月 17 日“就要骑”的谐音，也指明了骑行日的固定时间：每年的 9 月 17 日。这一天，摩拜单车将与合作伙伴共同呼吁和倡导居民关注城市可持续发展，尽量不开车、选择骑车出行，以实际行动减少拥堵和空气污染，以骑行去感受和热爱一座城市; 并引导和教育居民安全骑车、规范停车、文明用车，维护交通秩序和市容市貌; 同时，还将与城市管理部门一道，探讨通过创新技术手段规范共享单车管理、科学完善城市骑行基础设施建设，让城市更美好。</p>
+ <p>首个“世界骑行日”的主题是“骑行改变城市”。活动期间，除了鼓励用户骑车出行、倡导绿色交通外，摩拜单车将在全球超过 170 个城市与各大机构、合作商家和用户社群共同组织丰富多彩的线上线下活动，发放多种多样的骑行福利和虚拟勋章，鼓励和吸引更多人骑车出行，为低碳城市、绿色城市、健康城市和一个没有污染的地球添砖加瓦。</p>
+ <p>摩拜单车联合创始人兼 CEO 王晓峰表示：“‘让自行车回归城市’是摩拜单车的初心，‘骑行改变城市’则是我们所有人的愿景。自从 2016 年 4 月摩拜进入上海以来，共享单车经过 500 天的快速发展，累计骑行超 56 亿公里，节约碳排放量约 126 万吨，成功减少了拥堵、降低了污染、方便了出行，让城市生活变得更美好。如今，摩拜与合作伙伴一起发起‘世界骑行日’，鼓励更多的人参与共享骑行，共同建设环保、低碳的新型智慧城市。”</p>
+ <p>作为全球首款智能共享单车，摩拜单车如今已在全球超过 170 个城市投放超过 700 万辆智能共享单车，每天提供超过 2500 万次骑行，是全球第一大互联网出行服务。本次“世界骑行日”，除了国内城市的积极响应外，新加坡、伦敦、曼彻斯特、佛罗伦萨和札幌等多个有摩拜单车运营的国际城市也将积极参与，全球助力绿色共享骑行。</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

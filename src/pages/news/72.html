@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/72.html">共享经济思维引领 摩拜单车与招商银行达成战略合作</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年2月28日</span></div><p>2 月 28 日，摩拜单车、招商银行联合宣布双方达成战略合作，未来双方将在押金监管、支付结算、金融、服务和市场营销等方面展开全方位合作。这是共享经济思维在双方战略发展意图上的深刻体现。摩拜单车联合创始人兼 CEO 王晓峰、摩拜单车财务总监张仁朝、招商银行总行副行长唐志宏、上海分行行长李德林出席了签约仪式并进行了深入的沟通。</p>
+<p><img class="alignnone size-full wp-image-73" src="http://mobike.com/wp-content/uploads/2017/04/3b83f83246cd52383be8a9e6d6f7bc14.jpg" alt="摩拜单车与招商银行战略合作签约仪式" width="322" height="215" srcset="https://mobike.com/wp/wp-content/uploads/2017/04/3b83f83246cd52383be8a9e6d6f7bc14.jpg 322w, https://mobike.com/wp/wp-content/uploads/2017/04/3b83f83246cd52383be8a9e6d6f7bc14-300x200.jpg 300w" sizes="(max-width: 322px) 100vw, 322px" /></p>
+ <p>摩拜单车作为全球最大的智能共享单车平台，通过技术方式实现了共享单车的无桩停放，开启了行业发展的新模式。摩拜单车从成立之初即和招行保持着良好的合作伙伴关系，此前已经在招商银行开设了押金专户，对用户押金进行集中统一管理。</p>
+ <p>此次战略合作是双方原有良好合作关系的深化和发展，通过本次战略合作，双方将继续加深和完善在押金监管方面的合作，招商银行将对监管账户内所有资金进行严格审核、监管，确保押金的管理符合国家法律法规及摩拜与用户之间的《用户指南》、《车费与押金》的规定。</p>
+ <p>招商银行看好摩拜单车的发展前景，本次战略合作签约，除了继续提供押金监管服务外，还将在资金结算、绿色金融、信用卡积分、零售客户资源共享以及物理网点停车服务等方面开展深入合作。</p>
+ <p>通过将金融平台和移动互联网平台实现对接，双方企业能够更好为双方的客户提供服务。借助招商银行移动金融的领先优势和强大资本力量，摩拜将进一步提升自身在移动互联网出行领域的优势，同时也可以为招商银行数千万级持卡用户提供更加便捷、舒适、环保的出行方式，充分发挥移动互联网+金融的最大价值。</p>
+ <p>一周前，作为全球最大的智能共享单车平台，摩拜单车刚刚宣布，继 2016 年相继成功获得腾讯、华平投资、红杉、高瓴资本、贝塔斯曼等国内外知名机构投资后， 2017 年再次获得 D 轮及 D 轮后新融资，新引入携程、华住、 TPG 、富士康、淡马锡 (Temasek) 等战略投资者，且领投摩拜 C 轮的高瓴资本再次追加投资。仅 2017 年年初以来，摩拜单车 D 轮和 D 轮后累计融资额已超过 3 亿美元。</p>
+<p>&nbsp;</p>
+<p>###</p>
+ <p><strong>关于摩拜单车</strong> </p>
+ <p>摩拜单车创建了全球首个智能共享单车模式，其自主研发的专利智能锁集成了 GPS 和通讯模块，使用了新一代物联网技术，通过智能手机 APP 让用户随时随地可以定位并使用最近的摩拜单车，骑行到达目的地后，就近停放在路边合适的区域，关锁即实现电子付费结算。</p>
+ <p>摩拜单车于 2015 年 1 月成立， 2016 年 4 月 22 日地球日当天在上海正式推出智能共享单车服务，并已先后进入上海、北京、广州、深圳、成都等 24 个城市，迅速成长为全球最大的智能共享单车运营平台。摩拜在所到的城市中掀起骑行的热潮，推动“让自行车回归城市”，为更多人的出行带来方便，也给城市倡导绿色出行提供了可持续发展的智能解决方案。</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

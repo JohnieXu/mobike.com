@@ -57,7 +57,7 @@ gutil.log(gutil.colors.yellow('env: ' + env1))
 /* 清除dist目录 */
 function cleanFn() {
   gutil.log(gutil.colors.green('cleaning dist'))
-  return del('dist')
+  return del(['dist', 'docs'])
 }
 /* html打包-编译html */
 function buildHtmlFn() {
@@ -142,6 +142,13 @@ function buildMd5Fn() {
   return
 }
 
+/* 打包dist到docs中 */
+function makeDocsFn() {
+  gutil.log(gutil.colors.green('making docs'))
+  return gulp.src('dist/**/*')
+    .pipe(gulp.dest('docs/'))
+}
+
 /* 处理error */
 function handleError(err) {
   if (err.message) {
@@ -168,7 +175,7 @@ gulp.task('default', () => {
 gulp.task('clean', () => cleanFn())
 
 /* build task */
-gulp.task('build', () => runSequence(['buildHtml'],['buildCss'], ['buildJs'], ['buildImg'], ['buildVendor']))
+gulp.task('build', () => runSequence(['buildHtml'],['buildCss'], ['buildJs'], ['buildImg'], ['buildVendor'],['makeDocs']))
 /* buildHtml task */
 gulp.task('buildHtml', () => buildHtmlFn())
 /* buildCss task */
@@ -181,6 +188,8 @@ gulp.task('buildImg', () => buildImgFn())
 gulp.task('buildVendor', () => buildVendorFn())
 /* buildMd5 task */
 gulp.task('buildMd5', () => buildMd5Fn())
+/* makDocs task */
+gulp.task('makeDocs', () => makeDocsFn())
 
 /* serve task: 启动server */
 gulp.task('serve', () => browserSync.init({

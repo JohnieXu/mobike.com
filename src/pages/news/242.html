@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/242.html">共青团中央表彰摩拜单车创始人胡玮炜等 20 位“创新创业好青年”</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年5月4日</span></div><p><img class="alignnone size-full wp-image-243" src="http://mobike.com/wp-content/uploads/2017/05/0504.png" alt="共青团中央表彰摩拜单车创始人兼总裁胡玮炜等20位“创新创业好青年”" width="709" height="363" srcset="https://mobike.com/wp/wp-content/uploads/2017/05/0504.png 709w, https://mobike.com/wp/wp-content/uploads/2017/05/0504-300x154.png 300w" sizes="(max-width: 709px) 100vw, 709px" /></p>
+<p>5 月 4 日消息，五四青年节来临之际，共青团中央日前下发文件，表彰摩拜单车创始人兼总裁胡玮炜等 20 位“创新创业好青年”。胡玮炜等人同时还被评为 2017 年“全国向上向善好青年”。</p>
+ <p>共青团中央在中青发【2017】8 号文件中指出：“广大团员青年积极践行社会主义核心价值观, 在全社会进一步弘扬了新风正气, 传递了正能量。这其中涌现出一大批先进典型。”文件显示，胡玮炜是共享单车行业唯一一位入选者。</p>
+ <p>在此之前，胡玮炜和她创办的摩拜单车已经获得多次表扬：今年 1 月，胡玮炜受邀参加国务院总理李克强主持召开的《政府工作报告（征求意见稿）》座谈会，李克强指出“你可以带动中国制造业发展”；而在 3 月的全国两会期间，上海市委书记韩正明确表示，“共享单车我支持，摩拜单车创新举措我赞赏”。</p>
+ <p>此外，五四青年节当天，摩拜单车联合共青团北京市委员会、共青团天津市委员会、共青团上海市委、共青团四川省委、共青团福建省委、共青团广州市委、共青团南京市委员会、共青团海口市委员会、共青团石家庄市委、共青团长沙市委、云南省交通厅团委、大连旅顺口区人民政府、北京青少年网络文化发展中心和长沙市青年志愿者联合会共同宣传弘扬“五四”精神，倡导文明骑行、规范停车，为绿色城市、健康城市建设做贡献。</p>
+ <p>业内人士认为，摩拜单车具有鲜明的“中国原创”和“中国智造”创新烙印，以“互联网+”创新服务创造企业价值和社会价值，带动上下游产业链的新增长，并促进低碳交通、环保出行，这是其创始人胡玮炜获得团中央“创新创业好青年”表彰、摩拜单车频频被“点赞”的重要原因。</p>
+ <p>公开资料显示，胡玮炜 2015 年创立摩拜单车，并于 2016 年 4 月在上海正式运营。摩拜单车全球首创了 “无桩智能共享单车” 模式，不仅全新设计了更加坚固耐用、适于城市共享出行的车体结构，还为每一辆单车配备了 “北斗+GPS” 卫星定位芯片和移动物联网通信芯片，对于车辆位置和状态实现高精度、智能化实时管理。此外，摩拜单车还推出了全球首个人工智能大数据平台 “魔方” ，在供需调节、停放管理等方面发挥重要作用。</p>
+ <p>凭借创新模式、创新技术，摩拜单车如今已成长为全球第一大互联网出行服务。公开资料显示，摩拜单车已覆盖北上广深和新加坡等全球 50 多个城市、车辆总数超过 365 万辆，日均订单量超过 2,000 万单。根据速途研究院的最新报告，摩拜单车目前已占据国内共享单车市场近 60% 市场份额。</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

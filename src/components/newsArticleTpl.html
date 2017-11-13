@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      ##newsArticleContent##
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

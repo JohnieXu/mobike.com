@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/111.html">央视《焦点访谈》聚焦摩拜单车：解决短途出行难题一炮而红</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年3月5日</span></div><p>3 月 5 日消息，央视《焦点访谈》节目昨晚报道，以摩拜单车为代表的共享单车解决了城市短途出行的难题，投入市场后一炮而红。这种新业态、新产业不仅改变了人们的衣食住行，也让中国成为创业热土。</p>
+ <p>以下为《焦点访谈》图文实录（有节选）：</p>
+ <p>很多人一看见这种自行车，就知道，它们是最近十分火爆的共享单车，解决了城市人们短途出行的难题。其实，像这种新业态、新产业不仅在迅速改变着我们的衣食住行，也在让中国成为创业的热土。而新业态在让生活更加便捷的同时，也会带来一些原来没有想到的问题。今天的《问计两会》，我们就来谈谈身边这些新生事物成长中的烦恼。</p>
+<p><img class="alignnone size-full wp-image-112" src="http://mobike.com/wp-content/uploads/2017/04/0d1f50b26dc6e274e9f265257b1959d6.jpg" alt="央视《焦点访谈》节目昨晚报道，以摩拜单车为代表的共享单车解决了城市短途出行的难题" width="283" height="210" /></p>
+ <p>胡玮炜，80 后，最酷共享单车摩拜单车创始人，最初的创业构想，来自于自己日常的出行习惯。胡玮炜说，创业初期，车被盗、损坏和结束生命周期后会怎么样是她思考最多的问题。这些思考，最终全都体现在摩拜单车上：“它不仅仅是一辆自行车，它是一个新的物种，它解决了最后 0-5 公里的距离，所以其实我们考虑得比较多，比如说它最好是不要掉链子的。”</p>
+<p><img class="alignnone size-full wp-image-113" src="http://mobike.com/wp-content/uploads/2017/04/fae21aea9671754678b0806c7c49d37e.jpg" alt="摩拜单车投入市场后，一炮而红，不仅因为其靓丽的外观，还有让人耳目一新的智能系统。" width="283" height="210" /></p>
+ <p>摩拜单车投入市场后，一炮而红，不仅因为其靓丽的外观，还有让人耳目一新的智能系统。胡玮炜介绍：“到了这个时间点，其实连家里面的老人都已经会用手机买菜了，大家都习惯了移动支付了，所以我们可以用移动支付的方式来跟这个车连接。中国一直有这个自行车供应链的非常好的基础，在这个基础之上，我们才能设计和生产出这样的新物种。”</p>
+<p><img class="alignnone size-full wp-image-114" src="http://mobike.com/wp-content/uploads/2017/04/89650dc5e49e6afee6c18000d496c3b6.jpg" alt="摩拜单车的发展，每个阶段会遇到不同的困惑，从初期人们的好奇、占有、损坏到后来的政府关注和参与" width="283" height="209" /></p>
+ <p>摩拜单车的发展，每个阶段会遇到不同的困惑，从初期人们的好奇、占有、损坏到后来的政府关注和参与，每个问题的解决都会完成一次蜕变。</p>
+ <p>今年 1 月 1 日，胡玮炜作为企业代表被邀请进中南海为 2017 年政府工作报告提意见。胡玮炜告诉记者：“跟总理在汇报工作的时候，我也提出来说，摩拜单车是源自中国的，也希望能够得到支持，我们能走出国门，走向全世界。”</p>
+ <p>离政府工作报告出台还有一天，胡玮炜提出了对政府的期待：“其实我们并不是说要跟汽车对立，而是在出行的生态里面，能不能把自行车的比例也提高了，现在可能就是 10% 上下，我们能不能把它提高到 18% 、 20% ，这个是对整个城市的出行效果和环境都是有好处的。”</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

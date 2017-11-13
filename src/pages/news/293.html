@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/293.html">摩拜单车牵手高通中移动 树立共享单车物联网平台新标杆</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年5月23日</span></div><p><img class="aligncenter size-full wp-image-295" src="https://mobike.com/wp-content/uploads/2017/05/14.png" alt="" width="865" height="649" srcset="https://mobike.com/wp/wp-content/uploads/2017/05/14.png 865w, https://mobike.com/wp/wp-content/uploads/2017/05/14-300x225.png 300w, https://mobike.com/wp/wp-content/uploads/2017/05/14-768x576.png 768w" sizes="(max-width: 865px) 100vw, 865px" /></p>
+<p>5 月 23 日，全球智能共享单车首创者与领导者摩拜单车，与高通及中国移动研究院达成合作，共同启动中国首个 LTE Cat M1/NB-1 以及 E_GPRS（eMTC/NB-IoT/GSM）多模外场测试，树立共享单车物联网平台新标杆。</p>
+ <p>此次外场测试将充分利用中移动 2G/4G 多模网络，把高通面向物联网应用的 MDM9206 LTE-IoT 全球多模调制解调器应用在摩拜单车智能锁上。通过这款设备提供的 LTE 连接，以及其集成的全球卫星定位与导航功能，摩拜单车用户将能够更加精准地找到单车、加快开锁速度，并持续监测单车状态、实时管理。</p>
+ <p>此外，高通 MDM9206 调制解调器和低功耗蓝牙解决方案还将被用在摩拜单车“智能推荐停车点”（sMPL）中，全面实现“亚米级”定位，实时掌握各区域内单车数量、位置及不同区域间的流量信息，为单车投放、调度和运维提供智能指引，精细化管理迈上新台阶。</p>
+ <p>值得注意的是，高通 MDM9206 调制解调器支持 eMTC/NB-IoT/GSM 全球多模，能够兼容绝大多数国家和地区的移动通信网络；同时，中移动是全球最大电信运营商，在超过 200 个国家和地区开展业务。这意味着，通过牵手高通和中移动，摩拜单车无需改动车辆和智能锁硬件即可在海外市场投放车辆，并与当地的物联网和移动通信网络无缝实时对接，以技术创新继续引领中国企业“出海”之路。</p>
+ <p>此次摩拜单车联手高通、中国移动研究院展开的测试，标志着无线技术和服务领军企业将全球多模 LTE IoT 的优势，带给数百万用户及广大业界企业所迈出的重要一步。</p>
+ <p>摩拜单车联合创始人兼 CTO 夏一平表示：“借助高通 MDM9206 调制解调器的连接功能，以及其集成的全球导航卫星系统 GNSS 支持 GPS、北斗以及格洛纳斯，摩拜单车构建了全球最大的移动物联网系统。摩拜单车非常高兴与高通和中国移动研究院开展合作，充分利用最新科技为终端用户提供物联网应用及服务。”</p>
+ <p>中国移动研究院副院长黄宇红表示，摩拜单车是中国移动最大的物联网客户。他说：“中国移动研究院一直积极推动蜂窝物联网的发展，探索全新的物联网商业机遇。此次与高通以及摩拜单车计划开展的外场测试，将进一步扩大 LTE IoT（eMTC/NB-IoT）在智能共享单车与智慧出行等领域的应用。我们将依托中国移动 5G 联合创新中心，开展跨行业融合创新，充分利用中国移动 GSM 网络规模和 eMTC/NB-IoT 技术领先性，共推泛在物联解决方案，助力智慧物联生活。”</p>
+ <p>高通全球技术副总裁李维兴表示：“我们致力于提供满足客户需求的物联网优化解决方案，带来一系列可靠、高效且具备全球效应的 LTE IoT 蜂窝连接能力的全新应用和服务。通过与中国移动研究院以及摩拜单车开展的中国首个多模 eMTC/NB-IoT 外场测试合作，我们将能够展示一个面向诸如摩拜单车共享平台等全新物联网应用的、高度连接且更加高效的系统。”</p>
+ <p>与高通、中移动的合作，是摩拜单车物联网开放平台的重要组成部分。上周，摩拜单车公布“摩拜+”开放平台战略，正式推出生活圈、大数据和物联网三大开放平台，目前已经聚集了包括高通、中移动在内的各领域顶级企业。未来，摩拜单车将与开放平台企业展开全方位跨领域合作，共同推动共享单车行业快速发展。</p>
+ <p>自去年 4 月在上海投入运营以来，摩拜单车目前已在海内外超过 80 个城市投放了超过 450 万辆智能共享单车，日均订单量稳超 2000 万单，月活跃用户量环比增速超过 200%，是国内活跃用户最多、日均订单量最高、城市覆盖最广、成长速度最快的智能共享单车平台。</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

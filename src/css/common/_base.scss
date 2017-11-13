@@ -6,7 +6,6 @@ body {
   line-height: 1.2;
   color: #333;
   background: #fff;
-  background: #ccc;
 }
 ul {
   margin: 0;
@@ -71,6 +70,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 .container-md {
   max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container-sm {
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
 }

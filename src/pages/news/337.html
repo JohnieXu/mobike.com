@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/337.html">摩拜单车发布行业首个《共享单车文明停放倡议书》</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年7月24日</span></div><p>7 月 24 日，全球智能共享单车首创者与领导者摩拜单车今天发布行业首个《共享单车文明停放倡议书》，呼吁全体共享单车企业加强管理、及时处置乱停乱放、车辆淤积等问题；并呼吁用户文明用车、文明停放，共同维护良好的交通秩序和市容市貌。</p>
+ <p>过去一年间，共享单车行业快速发展，成为仅次于公交、地铁的城市第三大出行方式，化解了城市居民“最后一公里”出行痛点，并促进绿色城市、文明城市建设，受到各方赞誉。与此同时，少数用户带来的共享单车不文明停放现象也受到社会各界关注。</p>
+ <p>针对这一问题，摩拜单车已采取多重措施。通过每辆摩拜单车上配备的“北斗+GPS”卫星导航芯片和移动物联网芯片，摩拜单车构建了全球最大的移动物联网平台，实时精准掌握每一辆单车的位置和停放状态；同时，借助大数据人工智能平台“魔方”，摩拜单车实现了违规停车图像自动识别，准确度已超过 99%，处置违停效率大幅提升。</p>
+ <p>另一方面，摩拜单车建立了一支高效、专业的线下运维团队，在技术手段的帮助下主动调度车辆、规范停车行为、处置乱停乱放和车辆淤积。各个城市的摩拜单车运维团队依据大数据平台指导，第一时间到达现场、快速处理、有效疏导和调度车辆，管理能力获得普遍认可。</p>
+ <p>此外，通过行业首创的“信用分”体系，摩拜单车有效管理用户行为，督促用户文明用车、文明停放，培育良好的共享骑行文化；同时，通过“红包车”、“彩蛋车”等游戏化玩法，摩拜单车鼓励用户参与全民运维，在给用户发“福利”的同时进一步提升车辆管理效率。</p>
+ <p>今天发布的行业首个《共享单车文明停放倡议书》，是摩拜单车倡导文明骑行、文明停放的最新举措。摩拜单车相关人士表示，希望通过《倡议书》继续推动共享单车行业的健康有序发展，让城市生活更美好。</p>
+<p>&nbsp;</p>
+<figure id="attachment_338" style="width: 640px" class="wp-caption aligncenter"><img class="size-large wp-image-338" src="https://mobike.com/wp-content/uploads/2017/07/WechatIMG92-750x1024.jpeg" alt="《共享单车文明停放倡议书》" width="640" height="874" srcset="https://mobike.com/wp/wp-content/uploads/2017/07/WechatIMG92-750x1024.jpeg 750w, https://mobike.com/wp/wp-content/uploads/2017/07/WechatIMG92-220x300.jpeg 220w, https://mobike.com/wp/wp-content/uploads/2017/07/WechatIMG92-768x1049.jpeg 768w" sizes="(max-width: 640px) 100vw, 640px" /><figcaption class="wp-caption-text">《共享单车文明停放倡议书》</figcaption></figure>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

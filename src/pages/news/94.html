@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/94.html">两会即将开幕 全国政协委员刘春骑摩拜单车报到</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年3月2日</span></div> <p>据新京报报道，全国政协十二届五次会议将在北京开幕，全国政协委员已经陆续到驻地报到。3 月 2 日上午，全国政协委员、中南影业 CEO 刘春骑着共享单车到驻地报到。</p>
+<p><img class="alignnone size-full wp-image-95" src="http://mobike.com/wp-content/uploads/2017/04/b2d4541fdf0c5ef328aa11795c73cdaa.jpg" alt="全国政协委员刘春骑摩拜单车到驻地报到" width="151" height="227" /></p>
+<p><img class="alignnone size-full wp-image-96" src="http://mobike.com/wp-content/uploads/2017/04/f9c9ab726651a3fd5b9fba8216b3fd67.jpg" alt="全国政协委员刘春骑摩拜单车到驻地报到" width="227" height="151" /></p>
+<p><img class="alignnone size-full wp-image-97" src="http://mobike.com/wp-content/uploads/2017/04/e2cbb1a2e52fb9cbe9d86edb61db7708.jpg" alt="全国政协委员刘春骑摩拜单车到驻地报到" width="227" height="157" /></p>
+<p><img class="alignnone size-full wp-image-98" src="http://mobike.com/wp-content/uploads/2017/04/28bf4cf020d05579c445e5b5b930bc4e.jpg" alt="全国政协委员刘春骑摩拜单车到驻地报到" width="227" height="151" /></p>
+ <p>今天上午，新京报记者陪同刘春骑摩拜单车到驻地报到。刘春说，北京的交通拥堵严重，骑车的人多一点，可以减少道路拥堵。空气好的时候，骑车对身体也很好。</p>
+ <p>公开资料显示，摩拜单车目前已在北上广深等 24 个城市提供服务，是国内最大的智能共享单车平台。根据移动大数据监测平台 Trustdata 的最新数据，摩拜单车已占据国内共享单车市场约 70% 市场份额。</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

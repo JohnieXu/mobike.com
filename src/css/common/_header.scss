@@ -171,7 +171,7 @@
     .navigation__wrap {
       background: rgba(226, 61, 14, 0);
       &.bg-e23d0e {
-        background-color: #e23d0e;
+        background-color: rgba(226, 61, 14, 0.9);
       }
     }
     .nav__links {
@@ -180,7 +180,7 @@
       left: 0;
       width: 100%;
       display: none;
-      background: #E23D0E;
+      background: rgba(226, 61, 14, 0.9);
       li, a {
         display: block;
         box-sizing: border-box;

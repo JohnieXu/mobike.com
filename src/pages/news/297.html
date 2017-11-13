@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/297.html">摩拜单车接入苹果支付服务 将支持 iPhone 相机直接扫码解锁</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年6月6日</span></div><p>2017 年 6 月 6 日，全球智能共享单车首创者和领导者摩拜单车今天宣布接入苹果支付服务 Apple Pay，并将支持 iPhone 相机直接扫码解锁，进一步提升用户体验。</p>
+<figure id="attachment_298" style="width: 591px" class="wp-caption aligncenter"><img class="size-full wp-image-298" src="https://mobike.com/wp-content/uploads/2017/07/15.png" alt="最新版摩拜单车App已接入苹果支付服务Apple Pay" width="591" height="509" srcset="https://mobike.com/wp/wp-content/uploads/2017/07/15.png 591w, https://mobike.com/wp/wp-content/uploads/2017/07/15-300x258.png 300w" sizes="(max-width: 591px) 100vw, 591px" /><figcaption class="wp-caption-text">最新版摩拜单车 App 已接入苹果支付服务 Apple Pay</figcaption></figure>
+ <p>即日起，将摩拜单车 App 升级到最新的 iOS 5.0 版本，国内用户即可直接在摩拜单车 App 内通过 Apple Pay 充值车费或支付押金，无需跳转，缩短了支付时间、优化了支付体验，开辟了除微信支付和支付宝之外的第三种支付方式。</p>
+ <p>摩拜单车联合创始人兼 CTO 夏一平表示：“摩拜单车致力于给用户提供最优体验，我们很高兴在摩拜单车 App 中接入 Apple Pay，给用户带来无缝连接的支付方式和方便快捷的骑行体验，让共享单车成为更多人短途出行的首选。”</p>
+ <p>公开资料显示，Apple Pay 在全球多个国家拥有数量众多的银行、金融机构合作伙伴，是全球最受欢迎、使用人数最多的支付服务之一。接入 Apple Pay 将使摩拜单车海外用户的支付体验更加流畅便捷，国际化扩张又获新动能。</p>
+ <p>此外，在北京时间今天凌晨召开的苹果全球开发者大会（WWDC 2017）上，最新一代 iPhone 操作系统 iOS 11 正式公开，一大亮点是针对中国市场新增了 iPhone 相机扫描二维码打开网站、App 或进行支付的功能。这意味着，摩拜单车将再获新的海量用户入口。</p>
+<figure id="attachment_299" style="width: 865px" class="wp-caption aligncenter"><img class="size-full wp-image-299" src="https://mobike.com/wp-content/uploads/2017/07/16.png" alt="最新一代iOS操作系统将支持iPhone相机直接扫描二维码打开网站或App（图片来源：封面新闻）" width="865" height="416" srcset="https://mobike.com/wp/wp-content/uploads/2017/07/16.png 865w, https://mobike.com/wp/wp-content/uploads/2017/07/16-300x144.png 300w, https://mobike.com/wp/wp-content/uploads/2017/07/16-768x369.png 768w" sizes="(max-width: 865px) 100vw, 865px" /><figcaption class="wp-caption-text">最新一代 iOS 操作系统将支持 iPhone 相机直接扫描二维码打开网站或 App（图片来源：封面新闻）</figcaption></figure>
+ <p>摩拜单车移动端负责人周喆吾在 WWDC2017 现场接受采访时表示：“不久的将来，用户只要打开升级了 iOS11 的 iPhone 相机扫描车身二维码，就可以直接解锁摩拜单车，不需要启动 App。”他认为，这对于摩拜单车以及其他以扫码为入口的 App 而言十分重要。</p>
+ <p>目前，摩拜单车用户除了能够通过手机 App 扫码用车外，还可以通过微信“扫一扫”和小程序扫码解锁。自今年 3 月底全面接入微信以来，摩拜单车月活跃用户量环比增速超过 200%，近半数新增用户来自微信端。如今，随着 iOS11 和 iPhone 全面支持摄像头扫描二维码，摩拜单车再添新的流量和用户入口，增长速度将进一步加快，市场领先优势将进一步扩大。</p>
+ <p>自去年 4 月在上海率先投入运营以来，摩拜单车如今已覆盖北上广深、天津、成都、新加坡等海内外超过 90 个城市，投放超过 500 万辆智能共享单车，每天提供超过 2000 万次骑行，成为全球第一大互联网出行服务。</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

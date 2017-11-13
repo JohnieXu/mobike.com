@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/310.html">摩拜单车发布“宝箱车” 联手京东豪撒 22 亿元现金及优惠券</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年6月12日</span></div><p><img class="aligncenter size-full wp-image-311" src="https://mobike.com/wp-content/uploads/2017/07/18.png" alt="" width="709" height="406" srcset="https://mobike.com/wp/wp-content/uploads/2017/07/18.png 709w, https://mobike.com/wp/wp-content/uploads/2017/07/18-300x172.png 300w" sizes="(max-width: 709px) 100vw, 709px" /></p>
+<p>2017 年 6 月 12 日，全球智能共享单车首创者与领导者摩拜单车今天正式发布新版“宝箱车”，开启与各大品牌强强联手跨界营销的新玩法。摩拜“宝箱车”首发即联手国内领先电商平台京东商城开展“骑摩拜，有‘京’喜”活动，发放价值近 20 亿元的京东优惠券，以及总额 2 亿元的京东小金库现金红包和京东金融优惠券。京东也成为“摩拜+生活圈”开放平台的首家电商合作伙伴。</p>
+ <p>即日起至 6 月 18 日，摩拜单车用户更新摩拜 App 至 5.1.0 以上版本即可参与活动，骑行带有“京东 618”图标的“宝箱车”，即可领取京东商城购物优惠券，累计金额近 20 亿元；还可以 获得京东小金库现金红包和京东金融优惠券，总价值 2 亿元。此外，摩拜单车用户通过骑行“宝箱车”，集齐“京、东、6、1、8”五张贴纸，即可兑换价值人民币 618 元的现金红包，直接存入用户的京东小金库。</p>
+ <p>活动期间，摩拜单车用户通过京东商城 App 购物，还可以享受“摩拜用户专享价”福利，通过首页“领京豆”入口即可进入活动页面。此外，新用户通过京东 App 注册摩拜单车账号，将自动获得 7 天的免押金骑行券。</p>
+ <p>摩拜单车首席营销官郑顺景称：“宝箱车是摩拜单车继红包车之后，基于物联网、大数据和人工智能技术平台推出的又一款重要创新产品，在给摩拜用户送出更加丰富多样的‘福利’的同时，通过全新升级的游戏化玩法，激励用户参与全民智能化运维、化解供需潮汐现象，共同建设企业与用户良性互动的智能共享单车生态圈。”</p>
+ <p>郑顺景表示：“作为国内电商领导品牌，京东成为摩拜单车“宝箱车”的首发合作品牌，并为本次活动提供了价值逾 22 亿元的现金和优惠券，覆盖逾 1 亿摩拜单车用户。未来，两家公司还计划在账号互通、会员体系打通、联合营销等方面探索创新合作方式，继续互惠共赢。”</p>
+ <p>京东集团副总裁门继鹏表示：“我们通过摩拜“宝箱车”这一产品让消费者能够在更多场景中享受 618 年中购物节的实惠，同时京东也成为了帮助合作伙伴提升电商能力的零售基础设施供应商。可以说，618 已经变成代表年中购物节的一个符号，同时，它更代表了京东的开放精神和与社会上所有企业实现包容性共同成长的愿景。”</p>
+ <p>此外，京东成为“摩拜+生活圈”开放平台的首家电商平台合作伙伴。今年 5 月，摩拜单车正式发布“摩拜+”开放平台战略，全面布局“摩拜＋生活圈”、“摩拜＋物联网”、“摩拜＋大数据”三大开放平台，吸引了互联网、电信、金融、地产、出行、健康领域众多顶尖企业，通过资源互通、优势互补、服务融合的方式，让城市居民衣食住行、娱乐、教育、医疗等服务的选择空间极大拓展，共同打造智能共享单车“5 公里生活圈”。如今，随着京东的加入，“摩拜+电商”将打开互联网零售全新想象空间，为超过 1 亿用户提供线上线下无缝衔接的城市出行和消费体验。</p>
+ <p>摩拜单车去年 4 月正式在上海投入运营。截至目前，摩拜单车用户量超过 1 亿，已进入全球超过 90 个城市，运营超过 500 万辆智能共享单车，每天提供超过 2000 万次出行服务，是全球第一大互联网出行平台。此外，摩拜单车为每辆单车配备了“北斗+GPS”多模卫星导航芯片和移动物联网芯片，能够实时监控单车位置和状态，构建了全球最大的移动物联网平台。</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

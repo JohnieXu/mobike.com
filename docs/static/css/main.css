@@ -7,7 +7,6 @@ body {
   line-height: 1.2;
   color: #333;
   background: #fff;
-  background: #ccc;
 }
 ul {
   margin: 0;
@@ -78,6 +77,11 @@ a {
 }
 .container-md {
   max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container-sm {
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -284,7 +288,7 @@ a {
     background: rgba(226, 61, 14, 0);
   }
   #header .navigation__wrap.bg-e23d0e {
-    background-color: #e23d0e;
+    background-color: rgba(226, 61, 14, 0.9);
   }
   #header .nav__links {
     position: absolute;
@@ -292,7 +296,7 @@ a {
     left: 0;
     width: 100%;
     display: none;
-    background: #E23D0E;
+    background: rgba(226, 61, 14, 0.9);
   }
   #header .nav__links li,
   #header .nav__links a {

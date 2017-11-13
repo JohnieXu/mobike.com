@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/308.html">摩拜单车牵手微软公司 全球化发展增添新动能</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年5月31日</span></div><p>2017 年 5 月 31 日，北京市商务委员会主办的 2017 北京总部经济国际高峰论坛今天开幕，来自政府机构、企事业单位、国内外经济组织的超过 150 位官员、学者和企业界人士参会。本届论坛上，全球智能共享单车开创者与领导者摩拜单车与微软公司宣布双方将在多个领域展开创新合作。</p>
+ <p>根据此次宣布的内容，微软将成为摩拜单车的全球合作伙伴，未来两家公司将共同探索在大数据、云计算、机器学习、人工智能等前沿技术领域技术的创新合作，为摩拜单车的全球化发展增添新动能。</p>
+ <p>摩拜单车政府事务总监邢林表示：“我们很高兴能与微软公司达成合作。借助微软公司在大数据、机器学习、AI 技术等方面的独特优势，摩拜单车的创新成果将得到更加快速的发展和更加高效的运用，技术领先优势进一步扩大，继续引领中国智造‘出海’之路。”</p>
+ <p>微软公司大中华区副总裁，数字化转型和云计算事业部总经理杨涛表示：“微软智能云 Azure 已经覆盖全球 38 个区域，为全球客户提供稳定可靠、弹性伸缩、灵活扩展的云平台服务，很荣幸能够携手摩拜单车，助力这家中国创新浪潮中涌现出来的典范企业，在更广阔的市场当中获得进一步发展。”</p>
+ <p>此前，摩拜单车已经与多家国际领先的科技企业达成战略合作，包括沃达丰、爱立信、高通、陶氏化学等。其中，全球最大电信服务商之一沃达丰将为摩拜单车量身打造物联网平台解决方案；全球最大移动通信设备商爱立信将为摩拜单车提供蜂窝物联网技术；全球移动芯片巨头高通将为摩拜单车提供全球多模调制解调器；全球最大化工巨头之一陶氏化学将把更多的创新产品、材料和解决方案应用到摩拜单车的项目及产品中。</p>
+ <p>专家指出，此次合作将进一步提升摩拜单车的研发实力，并为摩拜单车的海外扩张提供强劲的新动能。牵手包括微软在内的众多国际领先企业，为摩拜单车在海外市场继续提供一流的服务和体验提供了支持，进一步确保摩拜单车在新的市场继续取得强劲增长表现。</p>
+ <p>自去年 4 月在上海投入运营以来，摩拜单车目前已在海内外超过 80 个城市投放了超过 450 万辆智能共享单车，日均订单量稳超 2000 万单，月活跃用户量环比增速超过 200%，是国内活跃用户最多、日均订单量最高、城市覆盖最广、成长速度最快的智能共享单车平台，也是全球最大的互联网出行平台和移动物联网平台。</p>
+ <p>摩拜单车在国内市场的精耕细作已经取得了丰硕果实，稳居共享单车市场领导品牌。接下来，借助大数据、物联网及人工智能平台“魔方”的精细化运营，以及聚合了众多高科技元素的单车产品，摩拜单车将代表中国智造“扬帆出海”，把中国创新推向全球。</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

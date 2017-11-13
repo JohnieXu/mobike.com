@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻 - Mobike</title>
+  <!-- include css -->
+  @@include('css.html')
+  <link rel="stylesheet" href="../static/css/news.min.css">
+</head>
+<body>
+  <!-- header -->
+  @@include('header.html', {
+    "logo": "../static/assets/img/logo-text.svg"
+  })
+  <!-- pagetitle -->
+  <!-- @@include('pagetitle.html', {
+    "title": "新闻",
+    "subTitle": "Mobike 新闻",
+    "imgUrl": "../static/assets/img/header-cities.jpg"
+  }) -->
+  <!-- content -->
+  <section>
+    <div class="container-sm">
+    <article id="news-article">
+      <h2 class="title"><a class="title__link" href="@@webRoot/news/328.html">“摩拜单车”入选 2016 年度中国媒体十大新词语</a></h2><div class="meta"><span class="meta__author">作者：<a href="">Mobike</a></span><span class="meta__date">发布时间：2017年7月18日</span></div><p><img class="aligncenter size-large wp-image-329" src="https://mobike.com/wp-content/uploads/2017/07/WechatIMG90-1024x613.jpeg" alt="" width="640" height="383" srcset="https://mobike.com/wp/wp-content/uploads/2017/07/WechatIMG90-1024x613.jpeg 1024w, https://mobike.com/wp/wp-content/uploads/2017/07/WechatIMG90-300x180.jpeg 300w, https://mobike.com/wp/wp-content/uploads/2017/07/WechatIMG90-768x460.jpeg 768w, https://mobike.com/wp/wp-content/uploads/2017/07/WechatIMG90.jpeg 1213w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+<p>7 月 18 日，教育部召开发布会，介绍 2016 年中国语言文字事业发展状况。“摩拜单车”入选年度中国媒体十大新词语。</p>
+ <p>据悉，在年度汉语盘点活动中，“摩拜单车”与“两学一做、冻产、表情包、洪荒之力、阿尔法围棋、网络大电影、山寨社团、吃瓜群众、闺蜜门”等一道当选年度中国媒体十大新词语。</p>
+ <p>此外，“规、小目标”分别当选年度国内字、国内词；“变、一带一路”分别当选年度国际字、国际词；“长征精神、两学一做、杭州 G20 峰会、南海、里约奥运会、脱欧、美国大选、亲信干政、天宫二号、阿尔法围棋”当选年度十大流行语；“洪荒之力、友谊的小船、定个小目标、吃瓜群众、葛优躺、辣眼睛、全是套路、蓝瘦香菇、老司机、厉害了我的哥”当选年度十大网络用语。</p>
+ <p>作为中国创新的佼佼者，摩拜单车自诞生以来备受媒体和社会各界的关注，多次登上央视《新闻联播》、《焦点访谈》、《对话》等王牌节目，多次受到人民日报、新华社等权威媒体的关注报道。此外，在进军海外的过程中，摩拜单车以“中国创造”的科技形象受到彭博社、路透社、BBC、卫报等国外主流媒体的报道。</p>
+ <p>摩拜单车去年 4 月在上海正式投入运营。经过一年多的发展，摩拜单车如今已进入全球 4 个国家的超过 150 个城市，投放超过 600 万辆智能共享单车，服务超过 1 亿用户，每天提供超过 2500 万次骑行，是全球第一大互联网出行服务。</p>
+
+    </article>
+    </div>
+  </section>
+  <!-- metalinks -->
+  @@include('metalink.html')
+  <!-- footer -->
+  @@include('footer.html', {
+    "logo": "../static/assets/img/logo-text.svg",
+    "beian": "../static/assets/img/beian-icon.png",
+    "longtou": "../static/assets/img/longtou.jpg"
+  })
+  <!-- include js -->
+  @@include('script.html')
+  <!-- <script src="../static/js/news.js"></script> -->
+</body>
+</html>

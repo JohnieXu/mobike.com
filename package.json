@@ -4,9 +4,9 @@
   "description": "mobike.com",
   "main": "index.html",
   "scripts": {
-    "start": "gulp -s",
-    "build": "gulp -p",
-    "dev": "gulp -d",
+    "start": "node newsArticle.js && gulp -s",
+    "build": "node newsArticle.js && gulp -p",
+    "dev": "node newsArticle.js && gulp -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JohniXu",
