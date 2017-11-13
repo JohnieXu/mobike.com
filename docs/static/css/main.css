@@ -537,9 +537,9 @@ a {
 }
 @media only screen and (max-width: 768px) {
   #metalink .metalink__item {
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
     padding: 20px 0;
   }
 }
@@ -1088,6 +1088,7 @@ footer .footer__inner__list {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  min-width: 200px;
 }
 #footer .footer__inner__list .list,
 footer .footer__inner__list .list {

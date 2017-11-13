@@ -35,7 +35,7 @@ const src = {
   img: 'src/assets/img/*',
   json: 'src/assets/json/*',
   md: 'src/assets/md/*',
-  vendor: ['vendor/**/*', 'bower_components/**/*']
+  vendor: ['bower_components/**/*']
 }
 
 /* gulp出口路径 */
@@ -115,7 +115,7 @@ function buildJsFn() {
 /* img assets打包-压缩图片 */
 function buildImgFn() {
   let imgFilter = filter(['**/*.jpg', '**/*.png', '**/*.gif', '**/*.svg', '**/*.webp'], {restore: true})
-  // let favoiconFilter = filter(['src/**/favoicon.png'])
+  // let favoiconFilter = filter(['src/**/favoicon.png'], {restore: true})
   gutil.log(gutil.colors.green('building img'))
   return gulp.src(src.assets)
     .pipe(imgFilter)

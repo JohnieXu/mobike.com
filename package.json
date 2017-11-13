@@ -12,6 +12,7 @@
   "author": "JohniXu",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^0.17.1",
     "browser-sync": "^2.18.8",
     "compass": "^0.1.1",
     "del": "^2.2.2",
