@@ -2,37 +2,47 @@
 
 ```
 .
+├── bower_components             // bower包
+│   ├── jquery                
+│   ├── uikit                   
+│   └── ...
 ├── package.json
 ├── README.md
 ├── gulpfile.js                  // gulp 配置文件
-├── dist                         // dist 目录：放置开发时候的临时打包文件
-├── src                          // 源文件目录
-│   ├── html                     // html 目录 
-│   │   ├── index.html
-│   │   └── page2.html
-│   ├── js                       // js 目录 
-│   │   ├── common               // 所有页面的共享区域，可能包含共享组件，共享工具类
-│   │   ├── home                 // home 页面 js 目录
-│   │   │   ├── components
-│   │   │   │   ├── App.js
-│   │   │   ├── index.js         // 每个页面会有一个入口，统一为 index.js
-│   │   ├── page2                // page2 页面 js 目录
-│   │   │   ├── components
-│   │   │   │   ├── App.js
-│   │   │   └── index.js
-│   └── style                    // style 目录
-│       ├── common               // 公共样式区域
-│       │   ├── varables.less    // 公共共享变量
-│       │   ├── index.less       // 公共样式入口
-│       ├── home                 // home 页面样式目录    
-│       │   ├── components       // home 页面组件样式目录
-│       │   │   ├── App.less 
-│       │   ├── index.less       // home 页面样式入口
-│       ├── page2                // page2 页面样式目录
-│       │   ├── components       
-│       │   │   ├── App.less
-│       │   └── index.less       
-├── vendor
-│   └── bootstrap
-└── └── jquery
+├── dist                         // dist目录：dev下临时打包目录
+├── docs                         // docs目录：github page
+└── src                          // 源文件目录
+    ├── assets                   // 静态资源目录 
+    │   ├── font                 // 字体
+    │   ├── img                  // 图片
+    │   ├── json                 // .json
+    │   └── md                   // .md
+    ├── components               // 公共组件
+    │   ├── header.html          // header组件
+    │   ├── footer.html          // footer组件
+    │   └── ...
+    ├── css                      // css目录 
+    │   ├── common               // 通用样式
+    │   │   ├── _header.scss     // header组件样式
+    │   │   ├── _footer.scss     // footer组件样式
+    │   │   └── ...     
+    │   ├── pages                // 页面级样式
+    │   │   ├── news.scss        // news页面样式
+    │   │   ├── cities.scss      // cities页面样式
+    │   │   └── ...    
+    │   ├── cities.scss          // sass打包后的页面级样式文件
+    │   └── main.scss            // sass打包后的主要样式文件
+    ├── js                       // js 目录 
+    │   ├── index.js             // 通用js文件
+    │   ├── news.js              // news页面js文件
+    │   └── ...                  
+    └── pages                    // pages目录 gulp直接copy到dist目录下=>网站路由结构
+        ├── about                // /about
+        │   ├── index.html             
+        ├── news                 // /news
+        │   ├── index.html             
+        │   ├── 52.html          // /news/52.html=>id=52的新闻页面
+        ├── ...             
+        └── index.html            
+
 ```
