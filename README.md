@@ -1,8 +1,9 @@
 ## 项目目录结构
 
+```
 .
-├── package.json                 
-├── README.md                    
+├── package.json
+├── README.md
 ├── gulpfile.js                  // gulp 配置文件
 ├── dist                         // dist 目录：放置开发时候的临时打包文件
 ├── src                          // 源文件目录
@@ -34,3 +35,4 @@
 ├── vendor
 │   └── bootstrap
 └── └── jquery
+```
