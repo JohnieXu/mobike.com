@@ -36,8 +36,7 @@ $(document).ready(function($) {
 
   /* about关于页面-页面切换 */
   $('.page-tab .page-tab__tab li').click(function() {
-    let page = this.dataset.page
-    // console.log(this.dataset.page)
+    let page = $(this).attr('page') || this.dataset.page
     $(this).toggleClass('active').siblings().removeClass('active');
     $('.page-tab .page-tab__page').addClass('hidden').parent().find('.page-tab__' + page).removeClass('hidden');
   })

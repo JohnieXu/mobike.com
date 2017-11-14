@@ -100,12 +100,12 @@ function buildJsFn() {
   gutil.log(gutil.colors.green('building js'))
   return gulp.src(src.js)
     .pipe(babel({
-      // presets: ['env']
+      presets: ['es2015']
     }))
     .on('error', err => handleError(err))
     .pipe(gulp.dest(dist.js)) // copy原始js
-    // .pipe(gulpif(env, uglify()))
-    // .on('error', err => handleError(err))
+    .pipe(gulpif(env, uglify()))
+    .on('error', err => handleError(err))
     .pipe(rename({            // 压缩添加.min
       suffix: '.min'
     }))

@@ -140,8 +140,8 @@ a {
 }
 #header .logo__links {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex: auto;
+          flex: auto;
 }
 #header .logo__links a {
   display: inline-block;
@@ -535,8 +535,8 @@ a {
 @media only screen and (min-width: 768px) {
   #metalink .metalink__item {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
+        -ms-flex: auto;
+            flex: auto;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -554,6 +554,7 @@ a {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 .page-title .page-title__mask {
   position: absolute;
@@ -562,6 +563,7 @@ a {
   width: 100%;
   height: 100%;
   background: rgba(226, 61, 14, 0.85);
+  z-index: -1;
 }
 .page-title .page-title__title {
   display: -webkit-box;
@@ -919,7 +921,7 @@ a {
 .page-tab__page {
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 10px;
   line-height: 1.7;
 }
 .page-tab__page h2 {
@@ -1178,9 +1180,9 @@ footer .footer__icp__inner .beian-icon {
 /*! pages */
 .page-tab {
   padding: 20px 0 40px;
+  padding: 0 0 40px 0;
   background: #F0F2F5;
 }
 .page-tab__wrap {
   position: relative;
-  margin-top: -60px;
 }
